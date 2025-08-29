@@ -53,7 +53,7 @@ librime-check:
 	@[ -f `which cmake` ] || { echo "Install cmake first"; exit 1; }
 
 librime-build: librime-check
-	git submodule update --init
+	# git submodule update --init
 	${mkfile_dir}/librimeBuild.sh
 
 librime-clean:
